@@ -1,7 +1,7 @@
 let leaves = [];
 const leafCount = 30;
-const gravity = 0.004;
-const windStrength = 0.001;
+const gravity = 0;
+const windStrength = 0.03;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
