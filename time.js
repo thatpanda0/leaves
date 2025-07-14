@@ -1,4 +1,4 @@
-window.onload = displayClock();
+window.onload = displayClock;
 function displayClock() {
 	var d = new Date();
 	var min = (mins = ('0' + d.getMinutes()).slice(-2));
