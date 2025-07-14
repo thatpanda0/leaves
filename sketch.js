@@ -2,11 +2,6 @@ let leaves = [];
 const leafCount = 10;
 const gravity = 0;
 const windStrength = 0.03;
-let font;
-
-function preload() {
-  font = loadFont('sfpro.otf');
-}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
