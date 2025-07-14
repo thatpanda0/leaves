@@ -36,7 +36,7 @@ body {
   font-size: 32px;
 }
 
-.lightBtn {
+.darkBtn {
   font-family: "Segoe Fluent Icons";
   font-size: 20px;
   position: absolute;
@@ -47,12 +47,12 @@ body {
   border: none !important;
 }
 
-body.light-mode {
+body.dark-mode {
   background: #362020;
 }
 
-body.light-mode #time,
-body.light-mode #date,
-body.light-mode .lightBtn {
+body.dark-mode #time,
+body.dark-mode #date,
+body.dark-mode .darkBtn {
   color: white;
 }
