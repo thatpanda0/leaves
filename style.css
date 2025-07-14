@@ -13,6 +13,7 @@ body {
   background: #fff4f2;
   font-family: sans-serif;
 }
+
 #time {
   position: absolute;
   font-family: "San Francisco", sans-serif;
@@ -23,6 +24,7 @@ body {
   border-radius: 8px;
   font-size: 128px;
 }
+
 #date {
   top: 180px;
   position: absolute;
@@ -32,4 +34,15 @@ body {
   padding: 10px;
   border-radius: 8px;
   font-size: 32px;
+}
+
+.lightBtn {
+  font-family: "Segoe Fluent Icons";
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent !important;
+  border: none !important;
 }
