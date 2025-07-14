@@ -25,36 +25,6 @@ function draw() {
     leaf.update();
     leaf.display();
   }
-
-
-  const now = new Date();
-
-  
-  let hh = now.getHours();
-  let mm = now.getMinutes();
-  // uncomment for 12h time
-  // const ampm = hh >= 12 ? 'PM' : 'AM';
-  // hh = hh % 12 || 12;
-  hh = nf(hh, 2);
-  mm = nf(mm, 2);
-  const timeString = `${hh}:${mm}`; // + ` ${ampm}` for AM/PM
-
-
-  const weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  const months   = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-  const weekday  = weekdays[now.getDay()];
-  const day      = now.getDate();
-  const month    = months[now.getMonth()];
-  const year     = now.getFullYear();
-  const dateString = `${weekday}, ${day} ${month} ${year}`;
-
-  document.getElementById('time').textContent = `${timeString}`;
-  document.getElementById('date').textContent = `${dateString}`;
-
-  //textSize(128);
-  //text(timeString, 40, 160);
-  //textSize(36);
-  //text(dateString, 60, 220);
 }
 
 class Leaf {
