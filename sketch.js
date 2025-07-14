@@ -12,8 +12,14 @@ function setup() {
 }
 
 function draw() {
-  background(255, 244, 242);
-
+  // does <body> contain light-mode?
+  if (document.body.classList.contains('light-mode')) {
+    background(255, 244, 242);
+  } 
+  else {
+    background(54, 32, 32);
+  }
+  
   for (let leaf of leaves) {
     leaf.update();
     leaf.display();
