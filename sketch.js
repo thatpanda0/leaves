@@ -28,7 +28,12 @@ function draw() {
 
 
   const now = new Date();
+  let timeString = now.toLocaleTimeString();
+  let dateString = now.toDateString();
 
+  document.getElementById('time').textContent = `Time: ${timeString}`;
+  document.getElementById('date').textContent = `Date: ${dateString}`;
+  
   let hh = now.getHours();
   let mm = now.getMinutes();
   // uncomment for 12h time
@@ -48,10 +53,10 @@ function draw() {
   const dateString = `${weekday}, ${day} ${month} ${year}`;
 
 
-  textSize(128);
-  text(timeString, 40, 160);
-  textSize(36);
-  text(dateString, 60, 220);
+  //textSize(128);
+  //text(timeString, 40, 160);
+  //textSize(36);
+  //text(dateString, 60, 220);
 }
 
 class Leaf {
