@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  background(255, 244, 242);
+  // background(255, 244, 242);
 
   for (let leaf of leaves) {
     leaf.update();
