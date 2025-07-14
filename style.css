@@ -2,7 +2,10 @@
     font-family: "San Francisco";
     src: url("sfpro.otf");
 }
-
+@font-face {
+    font-family: "Segoe Fluent Icons";
+    src: local("Segoe Fluent Icons"), url("https://takosthings.github.io/Fluent-Discord-Fonts/Segoe-Fluent-Icons.ttf") format("truetype");
+}
 
 body {
   margin: 0;
