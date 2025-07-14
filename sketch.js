@@ -5,8 +5,6 @@ const windStrength = 0.03;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  textFont(font);
-  textSize(128);
   background(255, 244, 242);
   for (let i = 0; i < leafCount; i++) {
     leaves.push(new Leaf());
