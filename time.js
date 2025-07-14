@@ -2,7 +2,7 @@ window.onload = displayClock;
 function displayClock() {
 	var d = new Date();
 	var min = (mins = ('0' + d.getMinutes()).slice(-2));
-	var hh = d.getHours();
+	var hh = ('0' + d.getHours()).slice(-2);
 	var ampm = '';
 	
 	const weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
