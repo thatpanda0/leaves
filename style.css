@@ -47,12 +47,12 @@ body {
   border: none !important;
 }
 
-.light-mode .time,
-.light-mode .date,
-.light-mode .icon {
-    color: white;
+body.light-mode {
+  background: #362020;
 }
 
-.light-mode body {
-  background: #362020;
+body.light-mode #time,
+body.light-mode #date,
+body.light-mode .lightBtn {
+  color: white;
 }
