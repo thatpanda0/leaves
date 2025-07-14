@@ -1,17 +1,19 @@
 window.onload = displayClock();
 function displayClock() {
-	const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
 	var d = new Date();
-	var mm = monthNames[d.getMonth()];
-	var dd = d.getDate();
 	var min = (mins = ('0' + d.getMinutes()).slice(-2));
 	var hh = d.getHours();
 	var ampm = '';
-
-	document.getElementById('time').innerText = `${hh}:${min}`;
-	// document.getElementById('separator').innerHTML = ' : ';
-	// document.getElementById('minutes').innerText = min + ampm;
+	
+	const weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+	const months   = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+	const weekday  = weekdays[d.getDay()];
+	const day      = d.getDate();
+	const month    = months[d.getMonth()];
+	const dateString = `${weekday}, ${day} ${month}`;
+	
+	document.getElementById('time').textContent = `${hh}:${min}`;
+	document.getElementById('date').textContent = `${dateString}`;
 
 	setTimeout(displayClock, 1000);
 }
