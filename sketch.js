@@ -28,11 +28,7 @@ function draw() {
 
 
   const now = new Date();
-  let timeString = now.toLocaleTimeString();
-  let dateString = now.toDateString();
 
-  document.getElementById('time').textContent = `Time: ${timeString}`;
-  document.getElementById('date').textContent = `Date: ${dateString}`;
   
   let hh = now.getHours();
   let mm = now.getMinutes();
@@ -52,6 +48,8 @@ function draw() {
   const year     = now.getFullYear();
   const dateString = `${weekday}, ${day} ${month} ${year}`;
 
+  document.getElementById('time').textContent = `${timeString}`;
+  document.getElementById('date').textContent = `${dateString}`;
 
   //textSize(128);
   //text(timeString, 40, 160);
